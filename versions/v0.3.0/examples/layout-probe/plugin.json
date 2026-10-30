@@ -1,0 +1,13 @@
+{
+  "id": "layout-probe",
+  "name": "布局探针",
+  "version": "1.0.0",
+  "description": "宽卡片监测 iframe 尺寸与响应式 12 栏布局。",
+  "icon": "▤",
+  "layout": {
+    "span": 12,
+    "height": 245
+  },
+  "defaultEnabled": true,
+  "capabilities": []
+}

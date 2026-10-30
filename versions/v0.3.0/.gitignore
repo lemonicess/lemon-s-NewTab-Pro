@@ -1,0 +1,7 @@
+# 本地/个人安装插件不进入 Git。发布包另行生成空 registry.json。
+/plugins/*
+!/plugins/.gitkeep
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

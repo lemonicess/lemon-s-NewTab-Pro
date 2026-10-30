@@ -1,0 +1,13 @@
+{
+  "id": "countdown",
+  "name": "倒计时",
+  "version": "1.0.0",
+  "description": "选择日期时间并显示剩余天数和秒数。",
+  "icon": "⌛",
+  "layout": {
+    "span": 6,
+    "height": 280
+  },
+  "defaultEnabled": true,
+  "capabilities": []
+}

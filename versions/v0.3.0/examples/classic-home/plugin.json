@@ -1,0 +1,31 @@
+{
+  "id": "classic-home",
+  "name": "经典主页（v0.9 风格）",
+  "version": "1.0.0",
+  "description": "独立实现旧版风格：全屏时钟、日期、搜索、导航、背景与自定义样式。",
+  "icon": "⌂",
+  "layout": { "mode": "fullscreen", "span": 12, "height": 640 },
+  "defaultEnabled": false,
+  "capabilities": ["open-url", "storage", "background"],
+  "settings": [
+    { "id":"appearance", "title":"外观", "fields":[
+      { "key":"heading", "type":"text", "label":"主页标题", "default":"我的新标签页", "maxLength":50 },
+      { "key":"accent", "type":"color", "label":"强调色", "default":"#c2a7ff" },
+      { "key":"textColor", "type":"color", "label":"主文字颜色", "default":"#ffffff" },
+      { "key":"glass", "type":"slider", "label":"导航卡片透明度（%）", "min":10, "max":95, "step":5, "default":35 },
+      { "key":"alternateBg", "type":"toggle", "label":"使用插件自带背景", "default":false },
+      { "key":"extraCss", "type":"textarea", "label":"自定义 CSS（仅在本插件内生效）", "default":"", "maxLength":1500 }
+    ]},
+    { "id":"clock", "title":"时钟与布局", "fields":[
+      { "key":"showDate", "type":"toggle", "label":"显示日期", "default":true },
+      { "key":"showSeconds", "type":"toggle", "label":"显示秒数", "default":false },
+      { "key":"clockSize", "type":"slider", "label":"时钟字号", "min":40, "max":130, "step":5, "default":90 },
+      { "key":"topOffset", "type":"slider", "label":"顶部间距", "min":40, "max":240, "step":10, "default":100 }
+    ]},
+    { "id":"search", "title":"搜索与导航", "fields":[
+      { "key":"showSearch", "type":"toggle", "label":"显示搜索框", "default":true },
+      { "key":"showNav", "type":"toggle", "label":"显示导航分组", "default":true },
+      { "key":"engine", "type":"select", "label":"默认搜索引擎", "default":"google", "options":[{"value":"google","label":"Google"},{"value":"bing","label":"Bing"},{"value":"duck","label":"DuckDuckGo"}] }
+    ]}
+  ]
+}
