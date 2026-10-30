@@ -1,0 +1,10 @@
+{
+  "id": "clock",
+  "name": "时钟（可选示例）",
+  "version": "1.0.0",
+  "description": "独立插件实现的时钟与日期，不属于主页核心。",
+  "icon": "◷",
+  "layout": { "span": 4, "height": 285 },
+  "defaultEnabled": true,
+  "capabilities": []
+}

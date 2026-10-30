@@ -1,0 +1,13 @@
+{
+  "id": "calculator",
+  "name": "计算器",
+  "version": "1.0.0",
+  "description": "四则运算、退格、清零；不使用 eval。",
+  "icon": "＋",
+  "layout": {
+    "span": 4,
+    "height": 440
+  },
+  "defaultEnabled": true,
+  "capabilities": []
+}

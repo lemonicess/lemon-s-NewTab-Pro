@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>lemon's NewTab Pro v0.3.1</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="plugin-schema.js" defer></script>
+  <script src="plugin-packages.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+  <video id="background-video" class="background-video" aria-hidden="true" hidden muted loop autoplay playsinline></video>
+  <main id="plugin-board" class="plugin-board" aria-label="已启用插件"></main>
+  <div id="global-message" class="notice" role="status" hidden></div>
+  <button id="manage-open" class="manage-button" type="button" aria-label="插件管理" title="插件管理" aria-haspopup="dialog">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><path d="M15 18h6m-3-3v6"/>
+    </svg>
+    <span class="visually-hidden">插件管理</span>
+  </button>
+  <div id="manager-overlay" class="overlay" hidden>
+    <div class="overlay-dim" id="overlay-dim"></div>
+    <section class="manager" role="dialog" aria-modal="true" aria-labelledby="manager-title" tabindex="-1">
+      <div class="manager-top"><h2 id="manager-title">插件管理 <span id="plugin-count" class="count">0</span></h2>
+        <button class="icon-button" id="manage-close" type="button" aria-label="关闭插件管理">✕</button>
+      </div>
+      <p class="manager-desc" id="manager-desc">无需 Node.js。选择插件文件夹即可安装；所有插件均在隔离沙箱中运行。</p>
+      <div id="plugin-list" class="plugin-list"></div>
+      <section id="settings-view" class="settings-view" hidden aria-label="插件设置">
+        <button id="settings-back" class="secondary-button" type="button">← 返回插件列表</button>
+        <h3 id="settings-title"></h3>
+        <p id="settings-description" class="manage-item-desc"></p>
+        <form id="settings-form"></form>
+        <div class="settings-actions">
+          <button class="primary-button" type="submit" form="settings-form">保存设置</button>
+          <button class="secondary-button" type="button" id="settings-reset">恢复默认</button>
+        </div>
+        <p id="settings-status" class="setting-status" role="status"></p>
+      </section>
+      <section class="install-panel" aria-label="安装插件">
+        <h3>安装插件</h3>
+        <p>无需命令行：选择一个包含 <code>plugin.json</code> 与 <code>main.js</code> 的文件夹。文件会复制到此扩展的本地数据库，不会修改磁盘上的目录。</p>
+        <button id="import-folder" type="button" class="primary-button">＋ 导入插件文件夹</button>
+        <input id="plugin-folder-input" type="file" webkitdirectory directory multiple hidden aria-label="选择插件文件夹">
+        <div class="example-installer">
+          <label for="example-select">或者安装官方示例</label>
+          <div class="example-install-row"><select id="example-select"><option value="">加载示例列表中…</option></select><button id="install-example" type="button" class="secondary-button">安装示例</button></div>
+        </div>
+        <p id="install-status" class="setting-status" role="status" aria-live="polite"></p>
+      </section>
+      <button id="reload-registry" class="secondary-button" type="button">刷新插件列表</button>
+      <p class="manage-footnote">插件按 ID 隔离设置与数据。全屏插件独占主页；背景由指定插件控制。只导入你信任的代码。</p>
+    </section>
+  </div>
+</body>
+</html>

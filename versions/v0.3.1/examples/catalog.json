@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "plugins": [
+    {
+      "id": "calculator",
+      "name": "计算器",
+      "assets": []
+    },
+    {
+      "id": "calendar",
+      "name": "月历",
+      "assets": []
+    },
+    {
+      "id": "classic-home",
+      "name": "经典主页（v0.9 风格）",
+      "assets": [
+        "assets/aurora.png"
+      ]
+    },
+    {
+      "id": "clock",
+      "name": "时钟（可选示例）",
+      "assets": []
+    },
+    {
+      "id": "countdown",
+      "name": "倒计时",
+      "assets": []
+    },
+    {
+      "id": "dice",
+      "name": "骰子",
+      "assets": []
+    },
+    {
+      "id": "hello-plugin",
+      "name": "你好，插件！",
+      "assets": []
+    },
+    {
+      "id": "layout-probe",
+      "name": "布局探针",
+      "assets": []
+    },
+    {
+      "id": "link-permission",
+      "name": "外链权限测试",
+      "assets": []
+    },
+    {
+      "id": "links",
+      "name": "快捷导航（可选示例）",
+      "assets": []
+    },
+    {
+      "id": "palette",
+      "name": "配色卡",
+      "assets": []
+    },
+    {
+      "id": "pomodoro",
+      "name": "番茄钟",
+      "assets": []
+    },
+    {
+      "id": "search",
+      "name": "搜索（可选示例）",
+      "assets": []
+    },
+    {
+      "id": "settings-showcase",
+      "name": "设置与存储演示",
+      "assets": [
+        "assets/icon.png"
+      ]
+    },
+    {
+      "id": "starter-card",
+      "name": "我的第一个插件",
+      "assets": []
+    },
+    {
+      "id": "text-tools",
+      "name": "文本工具",
+      "assets": []
+    },
+    {
+      "id": "todo",
+      "name": "待办清单",
+      "assets": []
+    },
+    {
+      "id": "welcome",
+      "name": "欢迎使用插件系统",
+      "assets": []
+    },
+    {
+      "id": "world-clock",
+      "name": "世界时钟",
+      "assets": []
+    }
+  ]
+}

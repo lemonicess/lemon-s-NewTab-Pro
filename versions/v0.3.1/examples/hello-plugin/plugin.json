@@ -1,0 +1,10 @@
+{
+  "id": "hello-plugin",
+  "name": "你好，插件！",
+  "version": "1.0.0",
+  "description": "最简插件模板：两个文件就能开始开发。",
+  "icon": "👋",
+  "layout": { "span": 4, "height": 180 },
+  "defaultEnabled": true,
+  "capabilities": []
+}
