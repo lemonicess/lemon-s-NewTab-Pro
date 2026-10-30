@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────────────
+# lemon's NewTab Pro — 版本库忽略规则
+#
+# 重要：每个版本目录下的 plugins/ 都是「本地运行时目录」。
+#   里面的插件由 scripts/install-examples.mjs 在本地安装，
+#   plugins/registry.json 由 scripts/build-registry.mjs 在本地生成。
+#   这些内容只用于自己安装测试，不纳入版本库、不推送云端，
+#   以免本地装的插件被当成版本更新。
+#   插件的源码存放在 examples/<插件ID>/，那部分照常入库。
+# ─────────────────────────────────────────────────────────────
+versions/*/plugins/*
+# 保留空插件目录的占位文件
+!versions/*/plugins/.gitkeep
+
+# ── 系统与工具杂物 ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+*.log
+npm-debug.log*
+# 编辑器/临时文件
+.idea/
+.vscode/
+*.swp
+*.tmp
