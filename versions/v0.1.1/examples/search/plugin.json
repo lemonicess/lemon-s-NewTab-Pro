@@ -1,0 +1,10 @@
+{
+  "id": "search",
+  "name": "搜索（可选示例）",
+  "version": "1.0.0",
+  "description": "Google 搜索输入框，借助 open-url 能力安全打开结果。",
+  "icon": "⌕",
+  "layout": { "span": 8, "height": 180 },
+  "defaultEnabled": true,
+  "capabilities": ["open-url"]
+}

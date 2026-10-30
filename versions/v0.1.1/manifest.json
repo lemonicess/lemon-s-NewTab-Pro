@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "lemon's NewTab Pro",
+  "version": "0.1.1",
+  "description": "lemon's NewTab Pro：基于本地插件目录与 Chrome MV3 安全沙箱的新标签页。",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "sandbox": {
+    "pages": [
+      "sandbox.html"
+    ]
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none';",
+    "sandbox": "sandbox allow-scripts; default-src 'none'; script-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; base-uri 'none';"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "palette",
+  "name": "配色卡",
+  "version": "1.0.0",
+  "description": "离线生成五色配色卡，展示文本与色块布局。",
+  "icon": "◐",
+  "layout": {
+    "span": 4,
+    "height": 260
+  },
+  "defaultEnabled": true,
+  "capabilities": []
+}

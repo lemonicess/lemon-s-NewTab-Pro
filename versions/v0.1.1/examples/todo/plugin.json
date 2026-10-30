@@ -1,0 +1,13 @@
+{
+  "id": "todo",
+  "name": "待办清单",
+  "version": "1.0.0",
+  "description": "新增、勾选、删除任务；故意使用会话内数据测试无存储权限。",
+  "icon": "☑",
+  "layout": {
+    "span": 4,
+    "height": 345
+  },
+  "defaultEnabled": true,
+  "capabilities": []
+}

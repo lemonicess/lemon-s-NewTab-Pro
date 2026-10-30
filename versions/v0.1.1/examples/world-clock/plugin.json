@@ -1,0 +1,13 @@
+{
+  "id": "world-clock",
+  "name": "世界时钟",
+  "version": "1.0.0",
+  "description": "通过 Intl 显示不同时区，自动适配夏令时。",
+  "icon": "◎",
+  "layout": {
+    "span": 6,
+    "height": 320
+  },
+  "defaultEnabled": true,
+  "capabilities": []
+}
