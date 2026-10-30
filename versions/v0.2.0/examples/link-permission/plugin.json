@@ -1,0 +1,15 @@
+{
+  "id": "link-permission",
+  "name": "外链权限测试",
+  "version": "1.0.0",
+  "description": "测试宿主 open-url 能力、首次确认及非法协议阻止。",
+  "icon": "↗",
+  "layout": {
+    "span": 6,
+    "height": 280
+  },
+  "defaultEnabled": true,
+  "capabilities": [
+    "open-url"
+  ]
+}

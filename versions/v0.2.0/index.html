@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>lemon's NewTab Pro v0.2.0</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="plugin-schema.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+  <video id="background-video" class="background-video" aria-hidden="true" hidden muted loop autoplay playsinline></video>
+  <main id="plugin-board" class="plugin-board" aria-label="已启用插件"></main>
+  <div id="global-message" class="notice" role="status" hidden></div>
+  <button id="manage-open" class="manage-button" type="button" aria-label="插件管理" title="插件管理" aria-haspopup="dialog">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><path d="M15 18h6m-3-3v6"/>
+    </svg>
+    <span class="visually-hidden">插件管理</span>
+  </button>
+  <div id="manager-overlay" class="overlay" hidden>
+    <div class="overlay-dim" id="overlay-dim"></div>
+    <section class="manager" role="dialog" aria-modal="true" aria-labelledby="manager-title" tabindex="-1">
+      <div class="manager-top"><h2 id="manager-title">插件管理 <span id="plugin-count" class="count">0</span></h2>
+        <button class="icon-button" id="manage-close" type="button" aria-label="关闭插件管理">✕</button>
+      </div>
+      <p class="manager-desc" id="manager-desc">管理插件、编辑插件自己的设置。核心主页不内置功能组件。</p>
+      <div id="plugin-list" class="plugin-list"></div>
+      <section id="settings-view" class="settings-view" hidden aria-label="插件设置">
+        <button id="settings-back" class="secondary-button" type="button">← 返回插件列表</button>
+        <h3 id="settings-title"></h3>
+        <p id="settings-description" class="manage-item-desc"></p>
+        <form id="settings-form"></form>
+        <div class="settings-actions">
+          <button class="primary-button" type="submit" form="settings-form">保存设置</button>
+          <button class="secondary-button" type="button" id="settings-reset">恢复默认</button>
+        </div>
+        <p id="settings-status" class="setting-status" role="status"></p>
+      </section>
+      <div class="manager-guide">
+        <strong>安装插件</strong>
+        <p>将插件目录放进 <code>plugins/</code>，在项目根目录执行 <code>node scripts/build-registry.mjs</code>，然后到 <code>chrome://extensions</code> 重新加载扩展。</p>
+      </div>
+      <button id="reload-registry" class="secondary-button" type="button">重新读取插件清单</button>
+    </section>
+  </div>
+</body>
+</html>

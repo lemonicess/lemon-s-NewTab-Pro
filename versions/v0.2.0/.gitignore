@@ -1,0 +1,8 @@
+# User-installed plugins and generated registry are strictly local.
+/plugins/*
+!/plugins/.gitkeep
+
+.DS_Store
+Thumbs.db
+node_modules/
+*.log

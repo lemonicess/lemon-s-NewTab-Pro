@@ -1,0 +1,13 @@
+{
+  "id": "dice",
+  "name": "骰子",
+  "version": "1.0.0",
+  "description": "随机生成 1–4 个骰子点数，测试按钮与选择框。",
+  "icon": "⚄",
+  "layout": {
+    "span": 4,
+    "height": 270
+  },
+  "defaultEnabled": true,
+  "capabilities": []
+}

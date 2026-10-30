@@ -1,0 +1,13 @@
+{
+  "id": "pomodoro",
+  "name": "番茄钟",
+  "version": "1.0.0",
+  "description": "离线专注与休息计时；支持开始、暂停、重置。",
+  "icon": "⏱",
+  "layout": {
+    "span": 4,
+    "height": 315
+  },
+  "defaultEnabled": true,
+  "capabilities": []
+}

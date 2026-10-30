@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "lemon's NewTab Pro",
+  "version": "0.2.0",
+  "description": "lemon's NewTab Pro：支持声明式设置、独立存储及全屏布局的 MV3 插件化新标签页。",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "sandbox": {
+    "pages": [
+      "sandbox.html"
+    ]
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none';",
+    "sandbox": "sandbox allow-scripts; default-src 'none'; script-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; base-uri 'none';"
+  }
+}

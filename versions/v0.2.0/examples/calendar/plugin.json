@@ -1,0 +1,13 @@
+{
+  "id": "calendar",
+  "name": "月历",
+  "version": "1.0.0",
+  "description": "本地日期网格、上月下月切换、选择日期。",
+  "icon": "▦",
+  "layout": {
+    "span": 6,
+    "height": 380
+  },
+  "defaultEnabled": true,
+  "capabilities": []
+}

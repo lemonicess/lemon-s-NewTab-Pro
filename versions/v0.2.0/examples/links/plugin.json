@@ -1,0 +1,10 @@
+{
+  "id": "links",
+  "name": "快捷导航（可选示例）",
+  "version": "1.0.0",
+  "description": "插件形式的导航卡片，不依赖旧导航管理系统。",
+  "icon": "▦",
+  "layout": { "span": 8, "height": 255 },
+  "defaultEnabled": true,
+  "capabilities": ["open-url"]
+}
